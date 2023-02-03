@@ -7,7 +7,7 @@
 ### !!! Before running the code below, 'analysis.01.wt.R' and 'analysis.01.mut.R' should be run first. !!! ###
 {
   INPUT.FILENAME1 = 'ANL001a.wt.data.processed.rds' # from 'analysis.01.wt.R'
-  INPUT.FILENAME2 = 'ANL001a.mut.data.processed.rds' # from ''analysis.01.mut.R'
+  INPUT.FILENAME2 = 'ANL001a.mut.data.processed.rds' # from 'analysis.01.mut.R'
 }
 
 {

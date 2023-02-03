@@ -29,7 +29,7 @@ sobj = CreateSeuratObject(counts = rna.counts)
 sobj[['percent.mt']] = PercentageFeatureSet(sobj, pattern = '^mt-')
 
 grange.counts = StringToGRanges(rownames(atac.counts), sep = c(':', '-'))
-if ( !all(standardChromosomes(grange.counts) == as.character(1:25)) ) {
+if ( !all(standardChromosomes(grange.counts) %in% as.character(1:25)) ) {
   grange.use = seqnames(grange.counts) %in% as.character(1:25)
   atac.counts = atac.counts[as.vector(grange.use), ]
 }
